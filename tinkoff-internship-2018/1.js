@@ -44,9 +44,8 @@ process.stdin.on('end', () => {
 });
 
 rl.on('line', data => {
-  const dataArr = data.split(' ');
-  const k = parseInt(dataArr[0], 10);
-  const m = parseInt(dataArr[1], 10);
+  const dataArr = data.split(' ').map(num => parseInt(num, 10));
+  const [k, m] = dataArr;
 
   if (m === k) {
     numberOfTablesInRow = 0;

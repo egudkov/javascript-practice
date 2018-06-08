@@ -11,8 +11,7 @@ process.stdin.on('end', () => {
 
 rl.on('line', data => {
   const dataArr = data.split(' ').map(Number);
-  const x = dataArr[0];
-  const y = dataArr[1];
+  const [x, y] = dataArr;
 
   const isBelowEyebrows = 0.5 * Math.abs(x) + 0.5 > y;
   const isInsideHead = 0.5 * x * x + y * y < 1;
