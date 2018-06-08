@@ -25,4 +25,3 @@ rl.on('line', data => {
     console.log('NO');
   }
 });
-
