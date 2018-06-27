@@ -23,9 +23,7 @@
  */
 
 function compose(f, g) {
-  return (...args) => {
-    return f(g(...args));
-  };
+  return (...args) => f(g(...args));
 }
 
 const add1 = a => a + 1;
